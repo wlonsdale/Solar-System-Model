@@ -1,0 +1,22 @@
+public class Moon extends CelestialBody
+{
+    private double distance;
+    private double angle;
+    private double speed;
+    private Planet planet;
+
+    public Moon(double distance, double angle, double diameter, String colour, double speed, Planet planet, SolarSystem solarSystem)
+    {
+        super(diameter, colour, solarSystem);
+        this.distance = distance;
+        this.angle = angle;
+        this.speed = speed;
+        this.planet = planet;
+    }
+
+    public void move()
+    {
+        angle += speed;
+        solarSystem.drawSolarObjectAbout(distance, angle, diameter, colour, planet.getDistance(), planet.getAngle());
+    }
+}
