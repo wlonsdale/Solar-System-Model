@@ -16,6 +16,9 @@ public class Moon extends CelestialBody
 
     public void move()
     {
+        if (angle > 360)
+            angle = 0;
+            
         angle += speed;
         solarSystem.drawSolarObjectAbout(distance, angle, diameter, colour, planet.getDistance(), planet.getAngle());
     }

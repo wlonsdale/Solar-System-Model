@@ -14,6 +14,9 @@ public class Planet extends CelestialBody
 
     public void move()
     {
+        if (angle > 360)
+            angle = 0;
+
         angle += speed;
         solarSystem.drawSolarObject(distance, angle, diameter, colour);
     }
