@@ -6,9 +6,9 @@ public class Comet extends CelestialBody
     private double angle;
     private double speed;
 
-    public Comet(double maxDistance, double minDistance, double angle, double diameter, String colour, double speed, SolarSystem solarSystem)
+    public Comet(String name, double maxDistance, double minDistance, double angle, double diameter, String colour, double speed, SolarSystem solarSystem)
     {
-        super(diameter, colour, solarSystem);
+        super(name, diameter, colour, solarSystem);
         this.maxDistance = maxDistance;
         this.minDistance = minDistance;
         this.distance = maxDistance;
@@ -29,6 +29,7 @@ public class Comet extends CelestialBody
             angle += speed;
             solarSystem.drawSolarObject(distance, angle, diameter, colour);
         }
+
         else
         {
             distance += x;
