@@ -28,6 +28,10 @@ public abstract class CelestialBody
      */
     public abstract void move();
 
+    /**
+     * Gets the name of the celestial body
+     * @return the name of the celestial body
+     */
     public String getName()
     {
         return name;
