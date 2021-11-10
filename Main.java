@@ -6,7 +6,7 @@ public class Main
     {
         Random random = new Random();
 
-        SolarSystem solSystem = new SolarSystem(1000, 1000);
+        SolarSystem solSystem = new SolarSystem(700, 700);
         SolarSystemGUI gui = new SolarSystemGUI();
         Controller controller = new Controller(solSystem);
 
